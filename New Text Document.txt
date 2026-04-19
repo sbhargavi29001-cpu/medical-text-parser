@@ -1,0 +1,40 @@
+# Medical Notes Extractor
+
+## 📌 Project Overview
+This project extracts structured medical information from unstructured clinical notes using Python and NLP techniques.
+
+## 🎯 Objective
+Convert free-text clinical notes into structured format:
+- Diagnosis
+- Symptoms
+- Medications
+- Follow-up actions
+
+## 🛠️ Technologies Used
+- Python
+- spaCy (NLP)
+- Streamlit (UI)
+
+## ▶️ How to Run
+
+1. Install dependencies:
+pip install -r requirements.txt
+
+2. Download spaCy model:
+python -m spacy download en_core_web_sm
+
+3. Run application:
+streamlit run ui.py
+
+## 🧪 Sample Input
+Patient diagnosed with diabetes. Complains of fatigue. Prescribed Metformin. Follow up after 2 weeks.
+
+## ✅ Sample Output
+Diagnosis: diabetes  
+Symptoms: fatigue  
+Medications: Metformin  
+Follow-up: Follow-up required
+
+## 💡 Notes
+- Rule-based extraction is used for better accuracy
+- spaCy is used as an optional enhancement
